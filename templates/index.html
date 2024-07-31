@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}My Index Page{% endblock %}
+
+{% block content %}
+<h1>Python Web Page</h1>
+<nav>
+    <ul>
+        <li><a href="{% url 'user_login' %}">Login</a></li>
+        <li><a href="{% url 'signup' %}">Signup</a></li>
+    
+    </ul>
+</nav>
+    <p>This webpage was developed using a phyton web framework named Django.</p>
+{% endblock %}
